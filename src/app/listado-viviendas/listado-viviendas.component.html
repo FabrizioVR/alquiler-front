@@ -1,0 +1,17 @@
+<div class="viviendas-container">
+    <h1>Listado de Viviendas</h1>
+    <div class="viviendas-grid">
+      <div class="vivienda-card" *ngFor="let propiedad of propiedades" [ngClass]="getEstadoClase(propiedad.availability)">
+        <img src="ruta/a/la/imagen.jpg" alt="Imagen de {{ propiedad.nTitle }}" class="vivienda-image">
+        <h2 class="vivienda-title">{{ propiedad.nTitle }}</h2>
+        <p>Estado: <span [ngClass]="getEstadoClase(propiedad.availability)">{{ propiedad.availability }}</span></p>
+        <p>Capacidad: {{ propiedad.capacity }} personas</p>
+        <p>Tipo: {{ propiedad.type }}</p>
+        <button class="details-button" *ngIf="propiedad.propertyId !== undefined" (click)="verDetalles(propiedad.propertyId)">Ver Detalles</button>
+      </div>
+    </div>
+  
+    <div class="boton-regresar-container">
+      <button (click)="regresar_listadoAmain()" class="regresar-button">Regresar a pagina principal</button>
+    </div>
+  </div>

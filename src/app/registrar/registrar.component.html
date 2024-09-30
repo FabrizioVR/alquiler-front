@@ -1,0 +1,33 @@
+<div class="registrar-container">
+    <h2>Regístrate ahora</h2>
+    <form class="registrar-form" (ngSubmit)="registrar()">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" [(ngModel)]="nombre" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" [(ngModel)]="telefono" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" required />
+      </div>
+  
+      <div class="form-group">
+        <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" [(ngModel)]="confirmarContrasena" required />
+      </div>
+  
+      <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+  
+      <button type="submit" class="btn-registrar">Registrar</button>
+  
+      <div class="boton-regresar-container">
+        <button type="button" (click)="volverInicio()" class="volverInicio-button">Regresar a Iniciar Sesión</button>
+      </div>
+    </form>
+  </div>
+  

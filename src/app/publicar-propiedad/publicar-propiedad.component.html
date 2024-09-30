@@ -1,0 +1,31 @@
+<div class="publicar-propiedad-container">
+    <h1>Publicar Propiedad</h1>
+    <form (ngSubmit)="onSubmit($event)">
+      <label for="nTitle">Título:</label>
+      <input type="text" id="nTitle" [(ngModel)]="property.nTitle" name="nTitle" required>
+  
+      <label for="description">Descripción:</label>
+      <textarea id="description" [(ngModel)]="property.description" name="description" required></textarea>
+  
+      <label for="direction">Dirección:</label>
+      <input type="text" id="direction" [(ngModel)]="property.direction" name="direction" required>
+  
+      <label for="availability">Disponibilidad:</label>
+      <select id="availability" [(ngModel)]="property.availability" name="availability">
+        <option value="Disponible">Disponible</option>
+        <option value="No disponible">No disponible</option>
+      </select>
+  
+      <label for="type">Tipo:</label>
+      <input type="text" id="type" [(ngModel)]="property.type" name="type" required>
+  
+      <label for="capacity">Capacidad:</label>
+      <input type="number" id="capacity" [(ngModel)]="property.capacity" name="capacity" required min="1">
+  
+      <label for="images">Imágenes:</label>
+      <input type="file" id="images" (change)="onFileSelected($event)" multiple accept="image/*" required>
+  
+      <button type="submit">Publicar Propiedad</button>
+      <button type="button" (click)="regresar_publicarAmain()">Regresar</button>
+    </form>
+  </div>

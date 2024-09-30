@@ -1,0 +1,93 @@
+body {
+    background-color: #f0f4f8; /* Color de fondo de la página */
+    font-family: 'Arial', sans-serif; /* Fuente para la página */
+  }
+  
+  .iniciar-sesion-container {
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 100px auto; /* Centrado vertical y horizontal */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border: 1px solid #eaeaea; /* Borde gris claro */
+  }
+  
+  h2 {
+    text-align: center; /* Texto centrado */
+    margin-bottom: 30px; /* Espacio inferior */
+    color: #333; /* Color del texto */
+  }
+  
+  .iniciar-sesion-form {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+  }
+  
+  .form-group {
+    display: flex; /* Usar flexbox para grupo de formularios */
+    flex-direction: column; /* Colocar elementos en columna */
+    margin-bottom: 20px; /* Espacio inferior */
+  }
+  
+  label {
+    margin-bottom: 8px; /* Espacio inferior del label */
+    font-weight: 600; /* Peso de la fuente */
+    color: #555; /* Color del texto */
+  }
+  
+  input {
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border-color 0.3s; /* Transición suave para el borde */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+  }
+  
+  input:focus {
+    border-color: #007bff; /* Color del borde al hacer foco */
+    outline: none; /* Eliminar el contorno por defecto */
+  }
+  
+  .btn-iniciar-sesion {
+    width: 100%; /* Ancho completo */
+    padding: 12px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+  }
+  
+  .btn-iniciar-sesion:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación */
+  }
+  
+  .btn-iniciar-sesion:active {
+    transform: translateY(0); /* Resetear elevación al hacer clic */
+  }
+  
+  .boton-regresar-container {
+    text-align: center; /* Centrar el contenido */
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  .registrar-button {
+    background-color: transparent; /* Fondo transparente */
+    color: #007bff; /* Color del texto */
+    border: none; /* Sin borde */
+    font-size: 14px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar cursor a puntero */
+    text-decoration: underline; /* Subrayar el texto */
+    transition: color 0.3s; /* Transición suave para el color */
+  }
+  
+  .registrar-button:hover {
+    color: #0056b3; /* Cambiar color al pasar el mouse */
+  }
+  

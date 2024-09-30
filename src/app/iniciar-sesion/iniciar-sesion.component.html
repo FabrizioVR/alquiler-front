@@ -1,0 +1,23 @@
+<div class="iniciar-sesion-container">
+    <h2>Iniciar Sesión</h2>
+    <form class="iniciar-sesion-form" (ngSubmit)="login()">
+      <div class="form-group">
+        <label for="phone">Teléfono:</label>
+        <input [(ngModel)]="phone" name="phone" type="text" id="phone" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="contrasena">Contraseña:</label>
+        <input [(ngModel)]="password" name="password" type="password" id="password" required>
+      </div>
+  
+      <button type="submit" class="btn-iniciar-sesion">Iniciar Sesión</button>
+  
+      <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+      <div class="boton-regresar-container">
+        <button (click)="registrar()" type="button" class="registrar-button">¿Aún no te registras? ¡Haz clic aquí!</button>
+      </div>
+    </form>
+  </div>
+  

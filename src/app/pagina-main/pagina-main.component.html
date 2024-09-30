@@ -1,0 +1,46 @@
+<header>
+  <div class="header-container">
+    <h1>TravelNest</h1>
+  </div>
+  <nav>
+    <ul>
+      <button (click)="editarPerfil()">Editar perfil</button>
+    </ul>
+  </nav>
+</header>
+
+<div class = "container">
+
+    <h2>Tenemos Una Gran Variedad De Propiedades en Alquiler</h2>
+
+    <h3>Encuentra La Mejor Propiedad Segun Tus Necesidades</h3>
+    
+    <h3></h3>
+    <div class="image-gallery">
+
+      <div class="image-item">
+        <img src="https://soyarquitectura.mx/wp-content/uploads/2021/09/post-casas-de-lujo.jpeg" alt="Buscas Alquilar" />
+        <button (click)="alquilar()">Alquilar</button>
+        <h4>Descubre todas nuestras opciones de alquiler</h4>
+      </div>
+
+      <div class="image-item">
+        <img src="https://content.arquitecturaydiseno.es/medio/2022/08/29/casa-blanca-en-polonia-salon_a75b4aaa_1280x794.jpg" alt="Buscas Publicar" />
+        <button (click)="publicar()">Publicar</button>
+        <h4>Publica tu casa en minutos y recibe ofertas</h4>
+      </div>
+    </div>
+    
+</div>
+
+<footer>
+  <h3></h3>
+  <nav>
+    <ul>
+      <li><a routerLink="/contacto">Contáctanos</a></li>
+      <li><a routerLink="/quienes-somos">Quiénes somos</a></li>
+      <li><a routerLink="/libro-reclamaciones">Libro de reclamaciones</a></li>
+    </ul>
+  </nav>
+  <p>&copy; 2024 Nombre de la Aplicacion. Todos los derechos reservados.</p>
+</footer>

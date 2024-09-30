@@ -1,0 +1,16 @@
+<div class="detalle-container">
+    <h1>Detalles de la Vivienda</h1>
+    <p>ID: {{ vivienda.propertyId }}</p>
+    <h2>{{ vivienda.nTitle }}</h2>
+    <p>{{ vivienda.description }}</p>
+    <p>Estado: {{ vivienda.availability }}</p>
+    <p>Capacidad: {{ vivienda.capacity }} personas</p>
+    <p>Tipo: {{ vivienda.type }}</p>
+    <p>Dirección: {{ vivienda.direction }}</p>
+    <p>Teléfono: {{ vivienda.state }}</p> <!-- Cambia esto si el campo no es correcto -->
+    
+    <div class="boton-regresar-container">
+      <button (click)="regresar()" class="regresar-button">Regresar a Listado de Viviendas</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,72 @@
+.publicar-propiedad-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .publicar-propiedad-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .publicar-propiedad-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .publicar-propiedad-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 15px;
+  }
+  
+  .publicar-propiedad-container input[type="text"],
+  .publicar-propiedad-container input[type="number"],
+  .publicar-propiedad-container input[type="file"],
+  .publicar-propiedad-container select,
+  .publicar-propiedad-container textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .publicar-propiedad-container input[type="file"] {
+    padding: 5px;
+  }
+  
+  .publicar-propiedad-container textarea {
+    resize: vertical;
+  }
+  
+  .publicar-propiedad-container button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .publicar-propiedad-container button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .publicar-propiedad-container button[type="button"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .publicar-propiedad-container button:hover {
+    opacity: 0.9;
+  }
+  
+  
